@@ -1,0 +1,81 @@
+{% style %}
+  .wrapper{
+    display: flex;
+    flex-direction: {{ section.settings.vertical_alignment }} ;
+    align-items: center;
+  }
+  .text_color{
+    font-size: {{ section.settings.font_size }}px;
+    color: {{ section.settings.body_text }}
+  }
+{% endstyle %}
+
+<div class="wrapper">
+  <div class="image_section">
+    <img
+    src="{{ section.settings.image_with_text_image | image_url }}"
+      width="303"
+      height="300"
+    >
+  </div>
+  <div>
+    <p class="text_color" >{{ section.settings.footer_linklist_title  }}</p>
+  </div>
+</div>
+
+{% comment %} row-reverse {% endcomment %}
+{% schema %} 
+{
+"name": "custom-image-with-text",
+"settings": [
+    {
+        "type": "image_picker",
+        "id": "image_with_text_image",
+        "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "body_text",
+        "label": "Text color",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "font_size",
+        "min": 10,
+        "max": 200,
+        "step": 5,
+        "unit": "px",
+        "label": "Font size",
+        "default": 10
+      },
+      {
+        "type": "text",
+        "id": "footer_linklist_title",
+        "label": "Heading",
+        "default": "Quick links"
+      },
+      {
+        "type": "select",
+        "id": "vertical_alignment",
+        "label": "Image alignment",
+        "options": [
+          {
+            "value": "row-reverse",
+            "label": "image second"
+          },
+          {
+            "value": "row",
+            "label": "image first"
+          }
+        ],
+        "default": "row"
+      }
+],
+"presets": [
+{
+"name": "custom  image with text"
+}
+]
+}
+{% endschema %}
