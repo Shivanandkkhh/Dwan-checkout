@@ -75,48 +75,10 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "17716636469fdb2fec": {
-      "type": "apps",
-      "blocks": {
-        "addmore_star_rating_pKtftn": {
-          "type": "shopify://apps/addmore/blocks/star_rating/019c7f5c-0dfc-724a-ac00-624b8b51dc81",
-          "settings": {
-            "product": "anchor",
-            "colour": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "addmore_star_rating_pKtftn"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "1771663796945b31e1": {
-      "type": "apps",
-      "blocks": {
-        "addmore_star_rating_CJ4kTE": {
-          "type": "shopify://apps/addmore/blocks/star_rating/019c7f5c-0dfc-724a-ac00-624b8b51dc81",
-          "settings": {
-            "product": "",
-            "colour": "#ff0000"
-          }
-        }
-      },
-      "block_order": [
-        "addmore_star_rating_CJ4kTE"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "17716636469fdb2fec",
-    "1771663796945b31e1"
+    "featured_collection"
   ]
 }
