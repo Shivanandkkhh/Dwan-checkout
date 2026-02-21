@@ -112,12 +112,31 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1771665082f55d6b77": {
+      "type": "apps",
+      "blocks": {
+        "addmore_star_rating_RMBeLR": {
+          "type": "shopify://apps/addmore/blocks/star_rating/019c7f5c-0dfc-724a-ac00-624b8b51dc81",
+          "settings": {
+            "product": "",
+            "colour": "#ff0000"
+          }
+        }
+      },
+      "block_order": [
+        "addmore_star_rating_RMBeLR"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "17716650387cffcba4",
-    "17716650412556598f"
+    "17716650412556598f",
+    "1771665082f55d6b77"
   ]
 }
